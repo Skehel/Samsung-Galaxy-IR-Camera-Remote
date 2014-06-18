@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0A0A0" >
+
+    <ImageButton
+        android:id="@+id/fireTimeLapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:background="@null"
+        android:onClick="fireTimeLapse"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_selector" />
+
+    <TextView
+        android:id="@+id/colonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMinutes"
+        android:layout_alignBottom="@+id/txtMinutes"
+        android:layout_toRightOf="@+id/txtMinutes"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/colonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMinutes"
+        android:layout_alignBottom="@+id/txtMinutes"
+        android:layout_toLeftOf="@+id/txtMinutes"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/txtHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/colonLeft"
+        android:layout_alignBottom="@+id/colonLeft"
+        android:layout_toLeftOf="@+id/colonLeft"
+        android:text="00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/txtSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/colonRight"
+        android:layout_alignBottom="@+id/colonRight"
+        android:layout_toRightOf="@+id/colonRight"
+        android:text="00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="80sp" />
+
+    <Button
+        android:id="@+id/plusHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtHours"
+        android:layout_alignLeft="@+id/txtHours"
+        android:layout_alignRight="@+id/txtHours"
+        android:background="#7a7272"
+        android:onClick="plusOrMinus"
+        android:text="+"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/plusMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/plusHours"
+        android:layout_alignBottom="@+id/plusHour"
+        android:layout_alignLeft="@+id/txtMinutes"
+        android:layout_alignRight="@+id/txtMinutes"
+        android:background="#7a7272"
+        android:onClick="plusOrMinus"
+        android:text="+"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/plusSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSeconds"
+        android:layout_alignLeft="@+id/txtSeconds"
+        android:layout_alignRight="@+id/txtSeconds"
+        android:background="#7a7272"
+        android:onClick="plusOrMinus"
+        android:text="+"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/takeSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSeconds"
+        android:layout_alignRight="@+id/txtSeconds"
+        android:layout_below="@+id/txtSeconds"
+        android:background="#7a7272"
+        android:onClick="plusOrMinus"
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/takeHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtHours"
+        android:layout_alignRight="@+id/txtHours"
+        android:layout_below="@+id/txtHours"
+        android:background="#7a7272"
+        android:onClick="plusOrMinus"
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/takeMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/takeSeconds"
+        android:layout_alignBottom="@+id/takeSeconds"
+        android:layout_alignLeft="@+id/txtMinutes"
+        android:layout_alignRight="@+id/txtMinutes"
+        android:background="#7a7272"
+        android:onClick="plusOrMinus"
+        android:text="-"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/txtMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp"
+        android:text="00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="80sp" />
+
+</RelativeLayout>

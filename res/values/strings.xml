@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CameraRemote</string>
+    <string name="title_section1">Shutter</string>
+    <string name="title_section2">Time Lapse</string>
+    <string name="title_section3">Settings</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

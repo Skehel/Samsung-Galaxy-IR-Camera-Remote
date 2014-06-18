@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0A0A0" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="73dp"
+        android:text="Please select your camera&apos;s manufacturer:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+    <RadioGroup
+        android:id="@+id/cameraType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" >
+
+        <RadioButton
+            android:id="@+id/radioCanon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="selectCamera"
+            android:text="Canon"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/radioSamsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectCamera"
+            android:text="Samsung"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/radioPentax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectCamera"
+            android:text="Pentax"
+            android:textSize="40sp" />
+    </RadioGroup>
+
+</RelativeLayout>
